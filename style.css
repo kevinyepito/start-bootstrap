@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;   /* Longitud máxima de las líneas */
+    height: 0.25rem;   /* Grosor de las líneas */
+    background-color: #2c3e50; /* Color oscuro por defecto (puedes cambiarlo) */
+    border-radius: 1rem;
+    margin: 0 1rem;    /* Separación con la estrella */
+}
+
+/* Color de las líneas cuando usas la versión clara (.divider-light) */
+.divider-custom.divider-light .divider-custom-line {
+    background-color: #fff; /* Líneas blancas */
+}
+
+/* Estilo para el icono (Estrella) */
+.divider-custom .divider-custom-icon {
+    font-size: 2rem;   /* Tamaño de la estrella */
+}
+
+/* Color del icono en la versión clara */
+.divider-custom.divider-light .divider-custom-icon {
+    color: #fff;       /* Estrella blanca */
+    transform: translateY(-5px);
+}
+
+/* Ancho fijo para el SVG de la estrella */
+.divider-custom .divider-custom-icon svg {
+    width: 2rem;
+    height: auto;
+}
+
+.divider-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
